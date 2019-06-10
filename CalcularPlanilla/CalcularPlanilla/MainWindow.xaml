@@ -21,6 +21,19 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+
+        <!--Definicion del primer Border-->
+        
+        <Border Grid.RowSpan="3" Grid.ColumnSpan="3" Background="LightPink">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock><Run Text="DATOS DE EMPLEADO"/></TextBlock>
+                </StackPanel>
+
+            </StackPanel>
+
+
+        </Border>
         
     </Grid>
 </Window>
