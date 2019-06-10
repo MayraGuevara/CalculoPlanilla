@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CalcularPlanilla"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+
+        <!-- Definicion de las filas-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Definicion de las columnas-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Definicion del primer Border-->
+
+        <Border Grid.RowSpan="3" Grid.ColumnSpan="3" Background="LightPink">
+            <StackPanel/>
+        </Border>
+        <StackPanel HorizontalAlignment="Left" Height="379" Margin="30,30,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="266" Grid.ColumnSpan="2">
+            <StackPanel Height="51">
+                <Label Content="Datos Del Empleado"/>
+
+            </StackPanel>
+            <Label Content="Nombre del Empleado:"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Identidad"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="HorasTrabajas"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Pago De Hora normal De Trabajo"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Horas Extras Trabajas"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Pago Por Hora De Trabajo Extra"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="161,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="359" Margin="83,30,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="306" Grid.Column="1">
+            <Label Content="Resultados:"/>
+           
+            <Label Content="Sueldo Sin Deduccion"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Sueldo Por Horas"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+            <Label Content="Sueldo Total Del Empleado"/>
+            <TextBox Height="23" TextWrapping="Wrap" Text=""/>
+
+
+        </StackPanel>
+              
     </Grid>
 </Window>
